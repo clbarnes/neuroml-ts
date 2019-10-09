@@ -1,0 +1,23 @@
+{
+  "name": "neuroml-ts",
+  "version": "0.1.0",
+  "description": "Typescript module for interaction with NeuroML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cxsd": "cxsd",
+    "v2beta4": "cxsd https://raw.githubusercontent.com/NeuroML/NeuroML2/master/Schemas/NeuroML2/NeuroML_v2beta4.xsd && npm run fix",
+    "fmt": "prettier --write \"xmlns/**/*.{js,ts}\"",
+    "updateImport": "require2import xmlns/***.js/",
+    "fix": "npm run updateImport && npm run fmt",
+    "build": "tsc index.ts"
+  },
+  "author": "Chris L. Barnes",
+  "license": "MIT",
+  "devDependencies": {
+    "cxsd": "^0.1.1",
+    "prettier": "^1.18.2",
+    "replace-require-with-import": "^2.1.0",
+    "typescript": "^3.6.3"
+  }
+}
