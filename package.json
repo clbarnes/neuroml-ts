@@ -2,7 +2,7 @@
   "name": "neuroml-ts",
   "version": "0.1.0",
   "description": "Typescript module for interaction with NeuroML",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cxsd": "cxsd",
@@ -14,6 +14,9 @@
   },
   "author": "Chris L. Barnes",
   "license": "MIT",
+  "dependencies": {
+    "cxml": "^0.1.1"
+  },
   "devDependencies": {
     "cxsd": "^0.1.1",
     "prettier": "^1.18.2",
